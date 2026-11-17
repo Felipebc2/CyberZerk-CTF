@@ -1,0 +1,1 @@
+oracle-badge.cyberzerk.fr  (HTTP, GET /?data=<hex>)

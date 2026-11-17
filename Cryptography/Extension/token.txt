@@ -1,0 +1,4 @@
+message = user=marc_v&role=stagiaire
+tag      = f81761886a0a96024db3864147e1650b7afe8e196eef08ec34182109d5f25670
+longueur_secret = 16
+append_requis   = &role=admin
