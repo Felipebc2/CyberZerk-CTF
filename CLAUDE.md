@@ -17,17 +17,28 @@ Em `CLAUDE.local.md` (gitignored). Nunca colocar credenciais em arquivo rastread
 
 ## Estrutura
 
-`<Categoria>/<NomeDoChallenge>/` com `README.md` (card) + `WRITEUP.md` (segue `WRITEUP_TEMPLATE.md`) + artefatos/solve. Pastas: `Web`, `Awareness`, `Steganography`, `Cryptography`, `Forensic`, `Miscellaneous` (inclui os retos de Warm-up e Signature da plataforma). Nome da pasta do reto em PascalCase sem acento (ex.: `Miscellaneous/SignatureReglement`). Prints em `img/`. Ao mudar status de um reto, atualizar a tabela do `README.md` raiz. Artefatos >100 MB vão para o `.gitignore` (sha256 no writeup).
+`<Categoria>/<NomeDoChallenge>/` com `README.md` (card) + `WRITEUP.md` (segue `WRITEUP_TEMPLATE.md`) + artefatos/solve. Pastas: `Web`, `Awareness`, `Steganography`, `Cryptography`, `Forensic`, `Miscellaneous` (inclui os challenges de Warm-up e Signature da plataforma). Nome da pasta do challenge em PascalCase sem acento (ex.: `Miscellaneous/SignatureReglement`). Prints em `img/`. Ao mudar status de um challenge, atualizar a tabela do `README.md` raiz. Artefatos >100 MB vão para o `.gitignore` (sha256 no writeup).
 
 ## Regras invioláveis
 
-1. NUNCA executar nada contra alvo do reto, plataforma ou infra (curl, nc, nmap, ssh, requests, browser...). Quem roda é o usuário.
-2. Escopo = só os subdomínios/IPs explicitamente dados em cada reto. Nada na infra da Hyperion Cloud, Cloudflare ou terceiros.
+1. NUNCA executar nada contra alvo do challenge, plataforma ou infra (curl, nc, nmap, ssh, requests, browser...). Quem roda é o usuário.
+2. Escopo = só os subdomínios/IPs explicitamente dados em cada challenge. Nada na infra da Hyperion Cloud, Cloudflare ou terceiros.
 3. Proibido: DoS, scan massivo, contornar proteções da plataforma. Falha na plataforma → reportar em `ctf@cyberzerk.fr`, não explorar.
 4. Nunca enviar flags, nunca compartilhar flag/solução fora deste repo.
 5. Repo privado; push/publicação só a pedido do usuário.
-6. Só máquina e rede pessoais (nada de PC/VPN/rede de empregador). Arquivos do reto (binários, malware) analisar em VM/container.
+6. Só máquina e rede pessoais (nada de PC/VPN/rede de empregador). Arquivos do challenge (binários, malware) analisar em VM/container.
+
+## Metodologia de ensino (como trabalhar os challenges comigo)
+
+Estes challenges são para **eu aprender**, não só para resolver. O padrão:
+
+1. **Ensinar passo a passo, um conceito por vez.** Não pular na frente, não despejar a solução inteira de uma vez. A cada passo, parar e checar se entendi antes de avançar.
+2. **Explicar a mecânica (o quê e o porquê), não só o comando.** Anatomia da coisa, por que o bug existe, por que o payload funciona — não apenas "cola isto aqui".
+3. **Quem executa contra o alvo sou eu.** O fluxo é: você explica → **eu** rodo (curl/browser/script) e reporto o resultado → seguimos. (reforça a regra inviolável nº 1)
+4. **Não criar scripts/artefatos por conta própria.** Só escrever script quando eu **pedir explicitamente**. Quando eu pedir, o script deve **imprimir progresso ao vivo** (nada de rodar silencioso) e rodar em **foreground/local**, a menos que eu peça background. Me passar o comando pra eu mesmo rodar.
+5. **Raciocínio em playbook, com honestidade.** Formular **hipótese** → **testar interrogando o oráculo** (ler as respostas do alvo a entradas escolhidas) → se a hipótese for **falsificada**, dizer isso claramente e **pivotar**. Hipótese derrubada é **dado, não fracasso**; assumir erros meus de rumo sem enrolar.
+6. **Usar o Arsenal do `ctf-dispatch` como playbook.** Se não houver ficha pro vetor, ensinar direto. Obs.: os subagents do dispatch ficam bloqueados pelo hook do context-mode → substituir por **triagem manual + ensino direto** do playbook.
 
 ## Writeups
 
-`WRITEUP.md` por reto seguindo `WRITEUP_TEMPLATE.md`, em português, e tabela do `README.md` atualizada junto. Anonimizar credenciais reais e hosts de infra (`<HOST>`, `<USER>`, `<TOKEN>`); flags e valores derivados do reto ficam.
+`WRITEUP.md` por challenge seguindo `WRITEUP_TEMPLATE.md`, em português, e tabela do `README.md` atualizada junto. Documentar a **trilha honesta**, incluindo hipóteses que falharam (seção "O que não funcionou"). Anonimizar credenciais reais e hosts de infra (`<HOST>`, `<USER>`, `<TOKEN>`); flags e valores derivados do challenge ficam.

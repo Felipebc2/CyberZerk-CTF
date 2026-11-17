@@ -41,6 +41,46 @@ Warm-up and Signature challenges live under <code>Miscellaneous/</code>.</p>
   <tr><td><a href="Miscellaneous/WarmUpYourFirstFlag/">Warm-up: your first flag</a></td><td>Warm-up</td><td>🟢</td><td>0</td><td>✅</td></tr>
   <tr><td><a href="Miscellaneous/SignatureReglement/">Signature : règlement</a></td><td>Signature</td><td>🟢</td><td>1</td><td>✅</td></tr>
   <tr><td><a href="Miscellaneous/SignatureConfidentialite/">Signature : confidentialité</a></td><td>Signature</td><td>🟢</td><td>1</td><td>✅</td></tr>
+  <tr><td><a href="Web/GhostTimekeeper/">Ghost Timekeeper</a></td><td>Web</td><td>🟢</td><td>50</td><td>✅</td></tr>
+  <tr><td><a href="Web/SQLorthigh/">SQL or thigh?</a></td><td>Web</td><td>🟢</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Web/SickLeave/">Sick leave</a></td><td>Web</td><td>🟢</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Web/ManagerArea/">Manager area</a></td><td>Web</td><td>🟢</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Web/HastyComparision/">Hasty Comparison</a></td><td>Web</td><td>🟡</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Awareness/TheWellBeingMinute/">The Well-being Minute</a></td><td>Awareness</td><td>🟢</td><td>—</td><td>✅</td></tr>
+  <tr><td><a href="Awareness/FalsePositive/">False Positive</a></td><td>Awareness</td><td>🟢</td><td>—</td><td>✅</td></tr>
+  <tr><td><a href="Awareness/Hooksail/">Hooksail</a></td><td>Awareness</td><td>🟢</td><td>—</td><td>✅</td></tr>
+  <tr><td><a href="Awareness/SecondFactor/">Second Factor</a></td><td>Awareness</td><td>🟢</td><td>75</td><td>✅</td></tr>
+  <tr><td><a href="Awareness/HoldOn/">Hold on</a></td><td>Awareness</td><td>🟢</td><td>75</td><td>✅</td></tr>
+  <tr><td><a href="Awareness/DistressSignal/">Distress Signal</a></td><td>Awareness</td><td>🟢</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Awareness/SocialEngineering/">Social Engineering</a></td><td>Awareness</td><td>🟡</td><td>125</td><td>✅</td></tr>
+  <tr><td><a href="Miscellaneous/TheServiceDoor/">The Service Door</a></td><td>Misc</td><td>🔴</td><td>175</td><td>✅</td></tr>
+  <tr><td><a href="Steganography/AccessBadge/">Access Badge</a></td><td>Stego</td><td>🟢</td><td>62</td><td>✅</td></tr>
+  <tr><td><a href="Steganography/HiddenFrequency/">Hidden Frequency</a></td><td>Stego</td><td>🟢</td><td>75</td><td>✅</td></tr>
+  <tr><td><a href="Steganography/Trombinoscope/">Trombinoscope</a></td><td>Stego</td><td>🟡</td><td>87</td><td>✅</td></tr>
+  <tr><td><a href="Steganography/FacadeSmile/">Facade smile</a></td><td>Stego</td><td>🟢</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Steganography/Workspaces/">Workspaces</a></td><td>Stego</td><td>🟡</td><td>102</td><td>✅</td></tr>
+  <tr><td><a href="Steganography/DoubleBottom/">Double Bottom</a></td><td>Stego</td><td>🔴</td><td>175</td><td>✅</td></tr>
+  <tr><td><a href="Steganography/LoadPlan/">Plan de Charge</a></td><td>Stego</td><td>🔴</td><td>236</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/ExpenseNote/">Expense Note</a></td><td>Crypto</td><td>🟢</td><td>75</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/TheInnerVoice/">La Voix Intérieure</a></td><td>Crypto</td><td>🟢</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/MilitaryEncryption/">Le Chiffrement Militaire</a></td><td>Crypto</td><td>🟢</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/TheDAFsChest/">The DAF's Chest</a></td><td>Crypto</td><td>🟡</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/RecklessBroadcast/">Reckless Broadcast</a></td><td>Crypto</td><td>🟡</td><td>125</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/TheOracleOfTheBadge/">The Oracle of the Badge</a></td><td>Crypto</td><td>🟡</td><td>174</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/Turnkey/">Turnkey</a></td><td>Crypto</td><td>🔴</td><td>175</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/TheSessionToken/">The Session Token</a></td><td>Crypto</td><td>🔴</td><td>221</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/Extension/">Extension</a></td><td>Crypto</td><td>🔴</td><td>259</td><td>✅</td></tr>
+  <tr><td><a href="Cryptography/UniqueSignature/">Signature Unique</a></td><td>Crypto</td><td>🟣</td><td>323</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/HREmail/">HR email</a></td><td>Forensic</td><td>🟢</td><td>75</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/NightOfThe13th/">Night of the 13th</a></td><td>Forensic</td><td>🟡</td><td>75</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/CallsForHelp/">Calls for help</a></td><td>Forensic</td><td>🟢</td><td>100</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/StrikesCaptured/">Strikes Captured</a></td><td>Forensic</td><td>🟡</td><td>125</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/GhostJournal/">Ghost Journal</a></td><td>Forensic</td><td>🟡</td><td>125</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/InheritedMacro/">Inherited Macro</a></td><td>Forensic</td><td>🟡</td><td>125</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/CrisisDump/">Crisis Dump</a></td><td>Forensic</td><td>🟡</td><td>150</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/Fragments/">Fragments</a></td><td>Forensic</td><td>🔴</td><td>150</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/TunnelDiscret/">Tunnel Discret</a></td><td>Forensic</td><td>🔴</td><td>175</td><td>✅</td></tr>
+  <tr><td><a href="Forensic/MemoryDrain/">Vidage de Mémoire</a></td><td>Forensic</td><td>🟣</td><td>230</td><td>✅</td></tr>
 </table>
 
 </div>
