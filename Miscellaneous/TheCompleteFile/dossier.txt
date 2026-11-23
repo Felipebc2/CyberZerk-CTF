@@ -1,0 +1,10 @@
+OPÉRATION CYBERZERK — DOSSIER COMPLET (méta)
+
+Pour boucler l'enquête, rassemblez trois pièces, chacune étant le MOT-CLÉ central
+du flag de trois challenges (le premier segment lisible, avant le premier '_') :
+  • pièce A : challenge « Diffusion Imprudente » (Crypto)
+  • pièce B : challenge « Export XML » (Web)
+  • pièce C : challenge « Fragments » (Forensique)
+
+Clé du dossier = SHA-256( A + '|' + B + '|' + C ), 12 premiers hex.
+Flag = CyberZerk{DOSSIER_c0mpl3t_<clé>}
