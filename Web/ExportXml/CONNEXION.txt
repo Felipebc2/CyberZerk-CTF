@@ -1,0 +1,1 @@
+export-xml.cyberzerk.fr (HTTP 8080, POST XML)
