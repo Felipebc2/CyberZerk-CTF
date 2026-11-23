@@ -22,11 +22,23 @@ Em `CLAUDE.local.md` (gitignored). Nunca colocar credenciais em arquivo rastread
 ## Regras invioláveis
 
 1. NUNCA executar nada contra alvo do challenge, plataforma ou infra (curl, nc, nmap, ssh, requests, browser...). Quem roda é o usuário.
-2. Escopo = só os subdomínios/IPs explicitamente dados em cada challenge. Nada na infra da Hyperion Cloud, Cloudflare ou terceiros.
-3. Proibido: DoS, scan massivo, contornar proteções da plataforma. Falha na plataforma → reportar em `ctf@cyberzerk.fr`, não explorar.
+2. Escopo de ataque = os subdomínios/IPs dados em cada challenge. Nesses alvos, **aprofundar além da solução pretendida é permitido** sob a seção *Caça a vulnerabilidades* abaixo. Permanecem **fora de escopo, nunca tocar**: infra da Hyperion Cloud, Cloudflare, terceiros, e contas/dados de outros participantes.
+3. Sempre proibido: DoS, scan massivo, destruição, persistência, exfiltração de dados de terceiros. Achar falha **além do escopo de um challenge** (RCE no box, acesso à infra/outro challenge/dados) agora é **objetivo premiado** pelo org: parar na fronteira, montar PoC mínimo e **reportar** em `ctf@cyberzerk.fr`/Discord (ver seção abaixo) — nunca explorar além da prova nem weaponizar.
 4. Nunca enviar flags, nunca compartilhar flag/solução fora deste repo.
 5. Repo privado; push/publicação só a pedido do usuário.
 6. Só máquina e rede pessoais (nada de PC/VPN/rede de empregador). Arquivos do challenge (binários, malware) analisar em VM/container.
+
+## Caça a vulnerabilidades e divulgação responsável (bug bounty)
+
+O org **convida e premia** achar falhas que ultrapassam o escopo de um challenge (troféu *Vulnerability Founded*, +500 pts) — **desde que reportadas, não exploradas à toa**. Política:
+
+- **Permitido** nos alvos dados: empurrar o challenge além do pretendido (ex.: virar LFI/SSTI em RCE no próprio box do challenge) para **demonstrar** a falha.
+- **Na fronteira, PARE.** No instante em que o acesso ultrapassa o challenge (infra, outro challenge, dados de terceiros, rede interna), **não avance**: capture um **PoC mínimo** (prova de alcance — um `id`, um hostname, um config do *próprio* app), **sem** exfiltrar dados de outros, sem mexer em produção, sem persistência, sem destruir.
+- **Reportar** pelo canal oficial (`ctf@cyberzerk.fr` ou Discord) com PoC e passos. Só compartilhar com o org; PoC/relatório ficam no repo privado.
+- **Quem executa contra o alvo continua sendo o usuário** (regra nº1): eu desenho o PoC e o relatório, **você** roda e envia.
+- **Fora de escopo permanente, nem pra PoC:** Hyperion Cloud, Cloudflare, terceiros, contas/dados de outros participantes, DoS, scan massivo.
+
+> Honestidade: o prêmio é **discricionário** do org e vem *por reportar com responsabilidade*. O caminho mais seguro — e que ainda ganha os pontos — é **demonstrar o mínimo e reportar**; não precisa modificar app ao vivo nem pivotar de verdade pra provar que dá.
 
 ## Metodologia de ensino (como trabalhar os challenges comigo)
 

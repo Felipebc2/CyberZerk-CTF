@@ -52,3 +52,10 @@ cookies.txt
 
 # Local agent settings
 .claude/settings.local.json
+
+# Cookie jars de curl
+jar
+jar.txt
+
+# Chave pública do challenge (não é segredo)
+!Web/DelegatedSignature/pubkey.pem
